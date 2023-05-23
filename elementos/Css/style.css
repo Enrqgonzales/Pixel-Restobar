@@ -88,6 +88,7 @@
     /*============= REUSABLE CSS CLASSES =============*/
     .container {
         max-width: 1120px;
+        margin-inline: auto;
         padding-inline: 0.75rem;
     }
 
@@ -97,13 +98,53 @@
     }
 
     /*============= HEADER & NAV =============*/
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .nav,
+    .nav__list {
+        display: flex;
+    }
+
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav__list {
+        column-gap: 3rem;
+    }
+
+    .nav__link { 
+        color: var(--body-color);
+        font-family: var(--second-font);
+        font-size: var(--large-font-size);
+        font-weight: var(--weight-400);
+        transition: all 0.3s var(--transition);
+    }
+
+    .nav__close,
+    .logo__mobile,
+    .nav__toggle { 
+        display: none;
+    }
 
     /* Active Link */
+    .active-link,
+    .nav__link:hover {
+        color: var(--second-color);
+    }
 
      /*============= HOME =============*/
      .home {
         background-image: url(../Img/bg5.png);
-        padding-block: 7.5rem 3.25rem;
+        padding-block: 8.5rem 3.25rem;
         position: relative;
      }
 
