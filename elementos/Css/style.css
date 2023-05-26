@@ -97,6 +97,53 @@
         gap: 1.5rem;
     }
 
+   .section {
+        padding-block: 7.5rem;
+    }
+
+    .section__container {
+        grid-template-columns: repeat(2,1fr);
+        margin-bottom: 3rem;
+    }
+
+    .section__title {
+        font-size: var(--bigger-font-size);
+    }
+
+    .section__title,
+    .section__description {
+        width: 80%;
+    }
+
+    .section__subtitle {
+        display: block;
+        color: var(--second-color);
+        font-family: var(--second-font);
+        font-size: var(--large-font-size);
+        font-weight: var(--weight-400);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 0.25rem;
+    }
+
+    .section__description {
+        margin-bottom: 1.5rem;
+    }
+
+    .section__data{
+        display: flex;
+        align-items: center;
+        column-gap: 2.25rem;
+    }
+
+    .section__img {
+        border-radius: 50%;
+    }
+
+    .section__data-title {
+        font-size: var(--h3-font-size);
+    }
+
     /*============= HEADER & NAV =============*/
     .header {
         position: absolute;
