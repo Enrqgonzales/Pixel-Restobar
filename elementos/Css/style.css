@@ -116,6 +116,8 @@
     }
 
     .title-center {
+        max-width: 800px;
+        margin-inline: auto;
         margin-bottom: 5rem;
         text-align: center;
         position: relative;
@@ -127,6 +129,7 @@
         position: absolute;
         left: 50%;
         bottom: -1.25rem;
+        transform: translateX(-50%);
         width: 270px;
         height: 12px;
         border-radius: 1.5rem;
@@ -418,5 +421,170 @@
 
 
     /*============= MENU =============*/
+    .menu { 
+        margin-left: -13%;
+        background-color: var(--container-color);
+    }
+
+    .menu__container {
+        grid-template-columns: repeat(3,1fr);
+        align-items: flex-start;
+    }
+
+    .menu__item { 
+        background-color: var(--body-color);
+        border-radius: 1.5rem;
+        position: relative;
+        padding: 3.25rem 4.5rem 3.25rem 12rem;
+    }
+
+    .menu__img-wrapper,
+    .menu__img-wrapper::before{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .menu__img-wrapper{
+        margin-left: -15rem;
+    }
+
+    .menu__img-wrapper::before {
+        content: '';
+        background-color: var(--second-color);
+        border-radius: 5.45rem;
+        left: 0;
+        width: 150px;
+        height: 190px;
+        margin-left: 2rem
+    }
+
+    .menu__img {
+        z-index: 10;
+        position: relative;
+        width: 55%;
+    }
+
+    .menu__title {
+        font-size: var(--h3-font-size);
+        cursor: pointer;
+        transition: all 0.3s var(--transition);
+    }
+
+    .menu__title:hover {
+        color: var(--second-color);
+    }
+
+    .menu__price { 
+        color: var(--second-color);
+        font-family: var(--second-color);
+        font-size: var(--h2-font-size);
+        font-weight: var(--weight-400);
+        display: block;
+        margin-block: 1rem 0.75rem;
+    }
+    .menu__rating {
+        display: flex;
+        column-gap: 0.75rem;
+        color: var(--first-color);
+        font-size: var(--large-font-size);
+    }
+
+    .menu__btn {
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 0.5rem;
+        background-color: var(--first-color);
+        display: grid;
+        place-items: center;
+        transform: all 0.3s var(--transition);
+    }
+
+    .menu__btn:hover {
+        background-color: var(--second-color);
+    }
+
+    .menu__btn i {
+        color: var(--title-color);
+        font-size: 2rem;
+        transition: all 0.3s var(--transition);
+    }
+
+    .menu__btn:hover i {
+        color: var(--body-color);
+    }
+
+    .opening {
+        background-color: var(--first-color);
+        padding: 2.5rem;
+        border-radius: 1.5rem;
+    }
+
+    .opening__title{
+        font-size: var(--h2-font-size);
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 2.25rem;
+        position: relative;
+    }
+
+    .opening__title::after { 
+        content: '';
+        position: absolute;
+        bottom: -0.75rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 5px;
+        background-color: var(--title-color);
+    }
+
+    .opening__list { 
+        margin-bottom: 1.7rem;
+    }
+
+    .opening__list :is(dt,dd) {
+        color: var(--title-color);
+        font-family: var(--second-font);
+    }
+
+    .opening__list .close {
+        color: var(--second-color);
+    }
+
+    .opening__list dt {
+        float: left;
+    }
+
+    .opening__list dd {
+        text-align: right;
+        margin-bottom: 1.25rem;
+    }
+
+    .opening__data {
+        background-color: var(--second-color);
+        padding: 1.25rem;
+        border-radius: 1.75rem;
+        text-align: center;
+    }
+
+    .opening__data h3,
+    .opening__description {
+        color: var(--body-color);
+    }
+
+    .opening__data h3 {
+        border-bottom: 5px solid var(--first-color);
+        font-size: var(--h2-font-size);
+        display: inline;
+    }
+
+    .opening__description {
+        font-size: var(--normal-font-size);
+        margin-top: 1.25rem;
+    }
 
     /*============= SERVICES =============*/
