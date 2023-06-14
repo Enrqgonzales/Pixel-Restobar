@@ -115,6 +115,24 @@
         width: 80%;
     }
 
+    .title-center {
+        margin-bottom: 5rem;
+        text-align: center;
+        position: relative;
+
+    }
+
+    .title-center::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -1.25rem;
+        width: 270px;
+        height: 12px;
+        border-radius: 1.5rem;
+        background-color: var(--first-color);
+    } 
+
     .section__subtitle {
         display: block;
         color: var(--second-color);
