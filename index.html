@@ -10,7 +10,7 @@
         <!----========= SWIPER CSS =========---->
         <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
         <!----========= CSS =========---->
-        <link rel="stylesheet" href="./elementos/Css/style.css">
+        <link rel="stylesheet" href="elementos/Css/style.css">
 
     <title>Pixel Restobar</title>
 </head>
@@ -206,8 +206,7 @@
             <div class="menu__group grid">
                 <div class="menu__item">
                     <div class="menu__img-wrapper">
-                        <img src="elementos/Img/clasica.png" alt="" class="menu__img" /
-                        >
+                        <img src="elementos/Img/clasica.png" alt="" class="menu__img" />
                     </div>
 
                     <div class="menu__data">
@@ -332,7 +331,7 @@
                     </div>
 
                     <div class="menu__data">
-                        <h3 class="menu__title">Pizza Hawaiana</h3>
+                        <h3 class="menu__title">Pizza Hawaiana Suprema</h3>
                         <span class="menu__price">S/.34.99</span>
                         <ul class="menu__rating">
                             <li><i class="ri-star-fill"></i></li>
@@ -355,7 +354,7 @@
                     </div>
 
                     <div class="menu__data">
-                        <h3 class="menu__title">Pizza Pepperoni</h3>
+                        <h3 class="menu__title">Pizza Pepperoni Suprema</h3>
                         <span class="menu__price">S/.34.99</span>
                         <ul class="menu__rating">
                             <li><i class="ri-star-fill"></i></li>
@@ -378,8 +377,8 @@
                     </div>
 
                     <div class="menu__data">
-                        <h3 class="menu__title">Alitas a la BBQ</h3>
-                        <span class="menu__price">S/.20.99</span>
+                        <h3 class="menu__title">Alitas a la BBQ Supremas</h3>
+                        <span class="menu__price">S/.19.99</span>
                         <ul class="menu__rating">
                             <li><i class="ri-star-fill"></i></li>
                             <li><i class="ri-star-fill"></i></li>
@@ -451,7 +450,7 @@
         </div>
     </section>
 
-    <!----============ DEALS =============---->
+    <!----============ DEALS 
     <section class="deals section container">
         <span class="section__subtitle">LO MEJOR DE LA SEMANA</span>
         <h2 class="section__title">LO MÁS VENDIDO</h2>
@@ -466,6 +465,7 @@
             </div>
         </div>
     </section>
+    =============---->
 
     <!----============ MENU =============---->
     <section class="menu menu-two section">
@@ -577,10 +577,130 @@
     </section>
 
     <!----============ RESERVATION =============---->
-    <section class="reservation" id="reservation"></section>
+    <section class="reservation section container" id="reservation">
+        <span class="section__subtitle">PONERSE EN CONTACTO</span>
+        <h2 class="section__title">RESERVACION DE MESA</h2>
+
+        <div class="reservation_container grid">
+            <div class="reservation__info">
+                <div class="reservation__Card">
+                    <span class="reservation__icon-wrapper">
+                        <img src="elementos/Img/mobile.png" 
+                                  alt="" 
+                                  class="reservation__icon">
+                    </span>
+                    
+                    <div>
+                        <h3 class="reservation__card-title">Delivery</h3>
+                        <span class="reservation__card-data">+51 934 109 844</span>
+                    </div>
+                </div>
+
+                <div class="reservation__Card">
+                    <span class="reservation__icon-wrapper">
+                        <img src="elementos/Img/email.png" 
+                                  alt="" 
+                                  class="reservation__icon">
+                    </span>
+                    
+                    <div>
+                        <h3 class="reservation__card-title">Reservaciones Privadas</h3>
+                        <span class="reservation__card-data">juniorgonzales140@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="reservation__Card">
+                    <span class="reservation__icon-wrapper">
+                        <img src="elementos/Img/location.png" 
+                                  alt="" 
+                                  class="reservation__icon">
+                    </span>
+                    
+                    <div>
+                        <h3 class="reservation__card-title">Ubicación</h3>
+                        <span class="reservation__card-data">Naciones Unidas, Casma</span>
+                    </div>
+                </div>
+            </div>
+
+            <form action="" class="reservation__form">
+                <div class="reservation__form-div">
+                    <input 
+                    type="text" 
+                    placeholder="Pedido"
+                    class="reservation__form-input">
+                </div>
+
+                <div class="reservation__form-group">
+                    <div class="reservation__form-div">
+                        <input 
+                        type="text" 
+                        placeholder="Nombre Completo"
+                        class="reservation__form-input">
+                    </div>
+
+                    <div class="reservation__form-div">
+                        <input 
+                        type="text" 
+                        placeholder="Número Telefónico"
+                        class="reservation__form-input">
+                    </div>         
+                </div>
+                
+                <div class="reservation__form-group">
+                    <div class="reservation__form-div">
+                        <input 
+                        type="text" 
+                        placeholder="dd/mm/aa"
+                        class="reservation__form-input">
+                    </div>
+
+                    <div class="reservation__form-div">
+                        <input 
+                        type="text" 
+                        placeholder="00:00 AM"
+                        class="reservation__form-input">
+                    </div>
+                </div>  
+                <button class="button reservation__button"> Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
 
     <!----============ GALLERY =============---->
-    <section class="gallery" id="gallery"></section>
+    <section class="gallery">
+        <div class="gallery__container grid">
+            <div class="gallery__item">
+                <img src="elementos/Img/galeria01.png" alt="" class="gallery__img">
+
+                <div class="gallery__hover"></div>
+            </div>
+
+            <div class="gallery__item">
+                <img src="elementos/Img/galeria02.png" alt="" class="gallery__img">
+
+                <div class="gallery__hover"></div>
+            </div>
+
+            <div class="gallery__item">
+                <img src="elementos/Img/galeria03.png" alt="" class="gallery__img">
+
+                <div class="gallery__hover"></div>
+            </div>
+
+            <div class="gallery__item">
+                <img src="elementos/Img/galeria04.png" alt="" class="gallery__img">
+
+                <div class="gallery__hover"></div>
+            </div>
+
+            <div class="gallery__item">
+                <img src="elementos/Img/galeria05.png" alt="" class="gallery__img">
+
+                <div class="gallery__hover"></div>
+            </div>
+        </div>
+    </section>
 
     <!----============ FOOTER =============---->
     <section class="footer" id="footer"></section>
@@ -591,7 +711,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <!----============ MAIN JS =============---->
-    <script src="./elementos/Js/main.js"></script>
+    <script src="elementos/Js/main.js"></script>
 
 </body>
 </html>
